@@ -10,9 +10,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.9.7",
-    "@apollo/react-hooks": "^4.0.0",
     "@apollo/server": "^4.10.1",
-    "apollo-boost": "^0.4.9",
     "graphql": "^16.8.1",
     "graphql-tag": "^2.12.6",
     "next": "14.1.3",
