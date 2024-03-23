@@ -5,7 +5,7 @@ import getPokemonByName from "./_service/getPokemonByName";
 
 export default function Home() {
   const [ searchName, setSearchName ] = useState('');
-  const [ pokemon, setPokemon ] = useState({
+  const [ pokemon, setPokemon ] = useState<{pokemon:any}>({
     pokemon: 'empty'
   });
   

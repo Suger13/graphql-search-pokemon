@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import getPokemonByName from "./_service/getPokemonByName";
 
 export default function PokemonDetails(props:any) {
-    const [ pokemon, setPokemon ] = useState();
+    const [ pokemon , setPokemon ] = useState<{pokemon: any}>();
     useEffect(() => {
         if (props.props.pokemon) {
             setPokemon(props.props);
