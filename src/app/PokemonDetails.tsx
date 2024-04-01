@@ -23,7 +23,7 @@ export default function PokemonDetails(props:any) {
 
         <div className="ml-10">
             <div className="w-full"> {/* Attack */}
-                <div className="w-40 text-2xl text-6xl">
+                <div className="w-40 text-6xl">
                 Attacks
                 </div>
 
