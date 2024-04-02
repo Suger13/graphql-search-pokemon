@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect } from "react";
-import getPokemonByName from "@/app/_service/getPokemonByName";
+import getPokemonByName from "@/app/_services/getPokemonByname";
 
 export default function About({ params }: any) {
     const [ pokemon, setPokemon ] = useState();
