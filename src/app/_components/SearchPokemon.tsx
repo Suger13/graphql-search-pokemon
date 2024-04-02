@@ -39,7 +39,6 @@ export default function SearchPokemon() {
 
     return (
       <>
-          {isLoad}
           <div className="text-3xl font-bold">Search Pokemon</div>
           <form action={handleSetUrlParam} className="w-full flex flex-col items-center gap-10">
             <input className="text-slate-700 w-1/2 rounded-xl p-3" name="search-pokemon" value={searchName} onChange={(e) => {setSearchName(e.target.value)}}/>

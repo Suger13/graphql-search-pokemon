@@ -18,17 +18,15 @@ export default function PokemonDetails(props:any) {
 
     return (
         <>
-            <Suspense fallback={ <Loading/> }>
         { pokemon ? 
-            <div className="rounded-xl flex justify-center p-10">
+            <div className="rounded-xl flex justify-center mt-2">
             <div className="flex flex-col items-center">
                 <div className="text-6xl">{pokemon.pokemon.name}</div>
                 <div className="border-2 border-blue-300 rounded-lg mt-10">
                     <Image src={pokemon.pokemon.image} alt={pokemon.pokemon.name} width={400} height={300} className="rounded-lg"/>
                 </div>
             </div>
-
-            <div className="ml-10">
+            <div className="ml-10 flex">
                 <div className="w-full"> {/* Attack */}
                     <div className="w-40 text-6xl">
                     Attacks
@@ -111,11 +109,11 @@ export default function PokemonDetails(props:any) {
                     </div> 
                 </div> {/* Attack  */}
                 { pokemon.pokemon.evolutions ? (
-                    <div className="w-full mt-10">
+                    <div className="w-full ml-10">
                         <div className="w-40 text-6xl">
                         Evolution
                         </div>
-                        <div className="border-2 mt-1 rounded-lg p-2">
+                        <div className="border-2 w-96 mt-1 rounded-lg p-2">
                             {pokemon.pokemon.evolutions ? pokemon.pokemon.evolutions.map((evo:any, index: number) => {
                             return (
                                 <div key={index} className="mt-2 text-lg">
@@ -133,7 +131,6 @@ export default function PokemonDetails(props:any) {
             </div>
             </div>
                 : ''}
-            </Suspense>
         </>
     )
 
