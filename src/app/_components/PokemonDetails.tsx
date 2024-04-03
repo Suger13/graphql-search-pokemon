@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Suspense, useEffect, useState } from "react";
 import getPokemonByName from "../_services/getPokemonByname";
 import { useRouter } from "next/navigation";
-import Loading from "../loading";
 
 
 export default function PokemonDetails(props:any) {
@@ -118,8 +117,6 @@ export default function PokemonDetails(props:any) {
                             return (
                                 <div key={index} className="mt-2 text-lg">
                                     <button className="p-2 rounded-lg bg-blue-300 text-slate-700" onClick={ async() => {
-                                        // let response = await getPokemonByName(evo.name);
-                                        // setPokemon(response)
                                         router.push('/?search=' + evo.name);
                                     }}>{evo.name}</button>
                                 </div>

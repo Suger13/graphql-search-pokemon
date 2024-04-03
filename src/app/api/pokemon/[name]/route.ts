@@ -1,8 +1,7 @@
-import createApolloClient from '@/apollo-client';
+import createApolloClient from '@/app/_services/apollo-client';
 import { gql } from '@apollo/client';
 export async function GET(req: Request, { params }: { params: {name: string}}) {
     const client = createApolloClient();
-    console.log("api params: ", params);
     
     const { data } = await client.query({
         query: gql `

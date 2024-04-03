@@ -42,7 +42,7 @@ export default function SearchPokemon() {
           <div className="text-3xl font-bold">Search Pokemon</div>
           <form action={handleSetUrlParam} className="w-full flex flex-col items-center gap-10">
             <input className="text-slate-700 w-1/2 rounded-xl p-3" name="search-pokemon" value={searchName} onChange={(e) => {setSearchName(e.target.value)}}/>
-            {isLoad ? "Loading" : <button type="submit" className="bg-blue-700 hover:bg-blue-500 active:bg-blue-900 rounded-lg p-3">Search!</button> }
+            {isLoad ? "Loading..." : <button type="submit" className="bg-blue-700 hover:bg-blue-500 active:bg-blue-900 rounded-lg p-3">Search!</button> }
           </form>
           <button className="bg-slate-700 hover:bg-slate-500 active:bg-slate-900 rounded-lg p-3" onClick={() => {
               setSearchName(randomPokemon());

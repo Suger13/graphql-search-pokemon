@@ -1,4 +1,4 @@
-import createApolloClient from '@/apollo-client';
+import createApolloClient from '@/app/_services/apollo-client';
 import { gql } from '@apollo/client';
 
 export default async function getPokemonByName (param:string) {
